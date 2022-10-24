@@ -1,7 +1,4 @@
-interface Coordinate {
-  x: number;
-  y: number;
-}
+import { Coordinate } from '../types';
 
 export function parseCoordinate(str: string): Coordinate;
 export function parseCoordinate(obj: Coordinate): Coordinate;

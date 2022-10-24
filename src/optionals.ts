@@ -1,3 +1,5 @@
+import { User } from '../types';
+
 // Optional parameters "?"
 const printIngredient = (
   quantity: string,
@@ -11,13 +13,6 @@ printIngredient('10', 'Flour');
 printIngredient('1 tbsp', 'Sugar', 'and Honey');
 
 // Optional fields
-interface User {
-  id: string;
-  info?: {
-    email?: string;
-  };
-}
-
 const getEmail = (user: User) => {
   return user?.info?.email ?? '';
 };
