@@ -34,3 +34,15 @@ export interface EventMap {
   addToCart: BaseEvent & { quantity: number; productID: string };
   checkout: BaseEvent;
 }
+
+export interface MyUser {
+  name: string;
+  id: number;
+  email?: string;
+  phone?: number;
+}
+
+export interface Cat {
+  name: string;
+  breed: string;
+}
