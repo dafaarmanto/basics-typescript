@@ -24,3 +24,13 @@ export interface Pokemon {
   name: string;
   hp: number;
 }
+
+export interface BaseEvent {
+  time: number;
+  user: string;
+}
+
+export interface EventMap {
+  addToCart: BaseEvent & { quantity: number; productID: string };
+  checkout: BaseEvent;
+}
